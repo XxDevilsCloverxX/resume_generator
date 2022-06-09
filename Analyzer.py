@@ -23,7 +23,6 @@ with open(filepath, 'rb') as pdfFile:
         #split key
         mini=key.split()
         for minikey in mini:
-            print(minikey)
             minikey = "".join(char for char in minikey if char.isalnum())
             cleaner_words.append(minikey)#feed the mini keys into the list
 
